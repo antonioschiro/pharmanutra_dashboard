@@ -1,0 +1,14 @@
+services:
+  postgres_etl:
+    image: postgres:13 # use host.docker.internal to connect to Apache Airflow
+    container_name: etl_postgres
+    environment:
+      POSTGRES_USER: etl_user
+      POSTGRES_PASSWORD: etl_password
+      POSTGRES_DB: etl_db
+    ports:
+      - "6000:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+volumes:
+  postgres_data:
