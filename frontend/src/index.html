@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHN Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-3.0.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Pharmanutra dashboard</h1>
+    <div id="stock-div">
+        <div id="stock-wrapper">
+            <h3>Stock trend</h3>
+            <div id="stock-btn-div" class="date-btn">
+                <button id="stock3m" class="stock-date-btn">3 months</button>
+                <button id="stock6m" class="stock-date-btn">6 months</button>
+                <button id="stock1y" class="stock-date-btn">1 year</button>
+                <button id="stock2y" class="stock-date-btn">2 years</button>
+            </div>
+        <div id="stock-chart"></div>
+    </div>
+    <div id="stock-tile" class="stock-tile-class"></div>
+    </div>
+    <div id="kw-div">
+    <div id="kw-wrapper">
+        <h3>Google search keywords trend</h3>
+        <div id="kw-btn-div" class="date-btn">
+            <button id="kw3m" class="kw-date-btn">3 months</button>
+            <button id="kw6m" class="kw-date-btn">6 months</button>
+            <button id="kw1y" class="kw-date-btn">1 year</button>
+            <button id="kw2y" class="kw-date-btn">2 years</button>
+        </div>
+        <div id="kw-chart"></div>
+    </div>
+        <div id="kw-tile">
+            <div class="row header">
+                <div class="cell">Keyword search counter</div>
+                <div class="cell">Today </div>
+                <div class="cell">Yesterday</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

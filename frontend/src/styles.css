@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 1000;
+    text-align: center;
+    text-decoration: rgb(44, 101, 198);
+    color: rgb(44, 101, 198);
+}
+
+h3 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 1000;
+    text-align: center;
+    text-decoration: rgb(44, 101, 198);
+    color: rgb(44, 101, 198); 
+}
+
+#stock-div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+#stock-wrapper {
+    width: 70%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(40, 40, 40, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.date-btn {
+  display:flex;
+  gap: 10px;
+  padding: 10px 10px 15px 10px;
+}
+
+button {
+    background: linear-gradient(45deg, #17abe4, #1790e4);
+    background-size: 200%;
+    background-position: left center;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    
+    transition: all 0.3s ease;
+  
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+}
+
+button:hover {
+  background-position: right center;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
+  transform: translate(-1px, -1px);
+}
+
+
+.stock-date-btn {
+    background-color:rgb(1,35,97);
+    border-radius: 8px;
+    border-color: rgb(44,101,198);
+    padding: 2px 6px;
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 16px;
+    color: white;
+}
+
+#stock-tile {
+    width: 30%;
+    font-family: "Roboto";
+    font-size: 24px;
+    text-align: justify;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(40, 40, 40, 0.1);
+    display: grid;
+    grid-template-columns: 12vw 12vw;
+    padding: 2.2vw;
+    gap: 1.3vw;
+}
+
+.div-stat {
+    display: flexbox;
+    border-radius: 8px;
+}
+.positive {
+    box-shadow: 0  0 10px 3px #369674;
+}
+
+.negative {
+    box-shadow: 0  0 10px 3px #B9375D;
+}
+
+.neutral {
+    box-shadow: 0  0 10px 3px #CDC2A5;
+}
+
+/* Card inner elements */
+.card-title {
+    display:flexbox;
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 0.5px solid gray;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.body-card {
+    padding: 10px;
+    width: max-content;
+}
+
+i {
+    margin-right: 15px;
+}
+.tile-first-line {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5vw;
+    padding: 15px;
+    padding-top: 30px;
+}
+
+.tile-second-line {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    padding: 15px;
+    padding-top: 5px;
+}
+/* KW section */
+
+#kw-div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    margin-top: 5px;
+}
+
+#kw-wrapper {
+    width: 70%;
+    overflow: hidden;
+    display: block;
+    box-shadow: 0 0 20px rgba(40, 40, 40, 0.1);
+    border-radius: 8px;
+}
+
+.kw-date-btn {
+    background-color:rgb(1,35,97);
+    border-radius: 8px;
+    border-color: rgb(44,101,198);
+    padding: 2px 6px;
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 16px;
+    color: white;
+}
+
+#kw-tile {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    color: rgb(120, 120, 120);
+    font-family: "Roboto";
+    text-align: justify;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(40, 40, 40, 0.1);
+    padding: 40px;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(125, 125, 125, 0.1);
+    border-radius: 8px;
+    padding: 8px 20px; 
+}
+.row.header {
+    background-color: rgb(246, 246, 246);
+    margin-bottom: 10px;
+}
+
+.cell {
+    width: 33%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+}
+
+.cell:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+
+.row:not(.header) .cell:last-of-type {
+    color: gray;
+}
