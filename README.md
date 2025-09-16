@@ -72,13 +72,13 @@ pharmanutra_dashboard/
 5. **Run the FastAPI backend:**
     ```bash
     cd backend
-    uvicorn backend:app --reload
+    uvicorn backend:app --port 7000 --reload
     ```
 
 6. **Run the frontend dashboard:**
     ```bash
     cd frontend
-    # Follow frontend-specific instructions (e.g., npm install && npm start)
+    # npm start
     ```
 
 ## API Endpoints
